@@ -18,7 +18,7 @@ output: html_document
 source("summary.R", local = knitr::knit_global())
 ```
 
-From 2005 to the present, there are `r totalCheckouts` on loan at the Seattle Public Library related to A Song of Ice and Fire. Of all those `r totalCheckouts` checked out, `r AudioPercentage`% is Audio book and `r Ebook Percentage`% is E book. however, of all checkouts in 2018 (the most recent full year), `r Audio2018Percentage`% of checkouts were Audio book, and only `r Ebook2018Percent`% were E book. the 2018 data may show a trend preference for borrowing Audio book or E book from the library in recent years.
+>From 2005 to the present, there are `r totalCheckouts` on loan at the Seattle Public Library related to A Song of Ice and Fire. Of all those `r totalCheckouts` checked out, `r AudioPercentage`% is Audio book and `r EbookPercentage`% is E book. however, of all checkouts in 2018 (the most recent full year), `r Audio2018Percent`% of checkouts were Audio book, and only `r Ebbok2018Percent`% were E book. the 2018 data may show a trend preference for borrowing Audio book or E book from the library in recent years.
 
 ### The Dataset
 
@@ -61,7 +61,7 @@ Here's an example of how to run an R script inside an RMarkdown file:
 
 Here's an example of how to run an R script inside an RMarkdown file:
 
-```{r, echo = FALSE, code = readLines("chart2_example.R")}
+```{r, echo = FALSE, code = readLines("chart3_example.R")}
 ```
 >I chose this chart because I wanted to examine trends in people's preferences for library use. For myself, I've hardly been to the library in the last year, so I thought there should be a downward trend. The results surprised me. There is indeed a substantial downward trend from 2019 to 2021. However, since 2021, SPL lending shows a slow decreasing trend despite covid-19 in 2020 and 2021, and a very high growth rate in 2021 and 2022.
 
